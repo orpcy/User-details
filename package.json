@@ -1,0 +1,23 @@
+{
+  "name": "mysqlapp",
+  "version": "1.0.0",
+  "description": "A Restful App created with nodejs, express and mysql db",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "author": "Orpcy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
+  }
+}

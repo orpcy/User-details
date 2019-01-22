@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>mysql</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <form method="POST" id="regForm" autocomplete="off">
+        name: <input type="text" id="name" /><br />
+        age: <input type="number" id="age" /><br />
+        Gender: <select name="sex" id="sex">
+          <option value="" selected disabled hidden>select gender</option>
+          <option value="male" >M</option>
+          <option value="female" >F</option>
+        </select> <br />
+        <input type="submit" value="submit" class="submit" />
+        <h2 id="errorHandler"></h2>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>age</th>
+          <th>sex</th>
+          <th>date</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+  </body>
+
+  <script src="index.js"></script>
+</html>
