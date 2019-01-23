@@ -8,9 +8,9 @@ const postUser = event => {
       "Content-type": "application/json"
     },
     body: JSON.stringify({
-      name: document.getElementById("name").value,
-      age: document.getElementById("age").value,
-      sex: document.getElementById("sex").value
+      name: document.getElementsByClassName('form-control')[0].value,
+      age: document.getElementsByClassName('form-control')[1].value,
+      sex: document.getElementById("inputGroupSelect02").value
     })
   })
     .then(res => res.json())
@@ -40,8 +40,8 @@ fetch("/users", {
     } else {
       resp.forEach(data => {
         let details = document.createElement("tr");
-        details.innerHTML = `<td>${data.id}</td>
-        <td>${data.name}</td>
+        details.innerHTML = `<th scope="row">${data.id}</th>
+        <td >${data.name}</td>
         <td>${data.age}</td>
         <td>${data.sex}</td>
         <td>${data.date}</td>
